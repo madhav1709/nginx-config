@@ -1,5 +1,4 @@
-#server block
-(buit on linux mint)
+#server block (buit on linux mint)
 server {
   
       listen 80 default_server;   #default
