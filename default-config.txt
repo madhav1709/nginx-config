@@ -2,11 +2,11 @@
 (buit on linux mint)
 server {
   
-      listen 80 default_server; #default
+      listen 80 default_server;   #default
   
       server_name localhost;
   
-      root /home/madhav/Desktop/project/got;#root directory of got-spa
+      root /home/madhav/Desktop/project/got;    #root directory of got-spa
   
       index index.html index.htm;
 
