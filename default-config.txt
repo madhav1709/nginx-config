@@ -1,0 +1,40 @@
+#server block
+(buit on linux mint)
+server {
+  
+      listen 80 default_server; #default
+  
+      server_name localhost;
+  
+      root /home/madhav/Desktop/project/got;#root directory of got-spa
+  
+      index index.html index.htm;
+
+
+ 
+  
+      error_page 404 /404.html; #custom 404 page
+  
+      location = /404.html {
+  
+      root /home/madhav/Desktop/project/got;
+  
+      internal;
+          
+              }
+
+ 
+      error_page 500 502 503 504 /50x.html; #custom 50x page
+ 
+      location = /50x.html {
+  
+      root /home/madhav/Desktop/project/got;
+
+      internal;
+        
+            }
+ 
+  
+      #used fake FastCGI pass location for testin 50x page and it works!!!.
+     
+         }
